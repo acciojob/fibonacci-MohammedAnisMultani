@@ -1,5 +1,12 @@
 function fibonacci(num) {
-// your code here
+if(num==1){
+	return 0;
+}
+	else(num==2){
+	return 1;
+}
+	let ans = fibonacci(num-1) + fibonacci(num-2);
+	return ans;
 }
 
 module.exports = fibonacci;
