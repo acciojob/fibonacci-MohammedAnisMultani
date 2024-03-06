@@ -1,7 +1,7 @@
 function fibonacci(num) {
 let a=0; b=1; temp;
-	if(num == 1){return a}
-	if(num == 2){return b}
+	if(num == 1){return 0}
+	if(num == 2){return 1}
 	for(let i = 2; i<num; i++){
 		temp = a + b;
 		a = b;
