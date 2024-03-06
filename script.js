@@ -1,15 +1,11 @@
 function fibonacci(num) {
-if(num==1){
-	return 0;
-}
-	if(num==2){
-	return 1;
-}
-	 if (memo[num]) {
-        return memo[num];
-    }
-	let memo[num] = fibonacci(num-1) + fibonacci(num-2);
-	return memo[num];
+let a=0; b=1; temp;
+	for(let i = 2; i<num; i++){
+		temp = a + b;
+		a = b;
+		b = temp;
+	}
+	return b;
 }
 
 module.exports = fibonacci;
